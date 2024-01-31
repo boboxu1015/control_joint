@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+    <node name="can_arm" pkg="socketcan_bridge" type="socketcan_bridge_node" respawn="false" output="screen">
+        <param name="can_device" value="can0" />
+        <rosparam>
+            can_ids:
+                - 0x011
+                - 0x012
+                - 0x013
+        </rosparam>
+        <remap from="sent_messages" to="arm_control_send_messages" />
+        <remap from="received_messages" to="arm_received_messages" />
+    </node>
+
+    <arg name="project" default="control_joint" />
+
+    <node pkg="$(arg project)" type="$(arg project)_speedControl" name="$(arg project)_speedControl" respawn="true" output="screen" />
+
+</launch>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package>
+    <name>control_joint</name>
+    <version>0.1.0</version>
+    <description>The control joint package</description>
+    <maintainer email="xuchunbobo@126.com">Student_Xu</maintainer>
+    <author>Xu Chunbo</author>
+
+    <!-- 许可证声明 -->
+    <license>MIT</license>
+
+    <!-- 构建工具的依赖声明，这里指定为catkin -->
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <!-- 编译时，运行时的依赖 -->
+    <build_depend>roscpp</build_depend>
+    <run_depend>roscpp</run_depend>
+
+    <build_depend>std_msgs</build_depend>
+    <run_depend>std_msgs</run_depend>
+
+    <build_depend>sensor_msgs</build_depend>
+    <run_depend>sensor_msgs</run_depend>
+
+    <build_depend>geometry_msgs</build_depend>
+    <run_depend>geometry_msgs</run_depend>
+    
+    <build_depend>nav_msgs</build_depend>
+    <run_depend>nav_msgs</run_depend>
+
+</package>
