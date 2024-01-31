@@ -9,7 +9,7 @@ set(CMAKE_CXX_FLAGS "-std=c++14")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g -pthread")
 
 ######################
-### Packages 2
+### Packages
 ######################
 
 ## 查找catkin并包含所有依赖项
